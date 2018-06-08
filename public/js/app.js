@@ -140,4 +140,6 @@ if (navigator.geolocation) {
     });
 } else {
     alert('Geolocation is not supported in your browser');
+    const Berlin = new Weather('Berlin', 7);
+    Berlin.getForecast();
 }
