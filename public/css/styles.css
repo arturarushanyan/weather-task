@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 16px/16px Arial, sans-serif;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    color: #34495e;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.day-column {
+    cursor: pointer;
+}
+
+.description-col, .selected {
+    background: #34495e;
+    color: white;
+    border-bottom-color: #34495e;
+}
+
+.description-col {
+    display: none;
+}
+
+.description-col.opened {
+    display: table-cell;
+}
+
+.day h3, .day p {
+    color: #f1c40f;
+}
+
+@media screen and (max-width: 1024px) {
+    th, td {
+        width: calc(50% - 31px);
+        float: left;
+        border-left: 0;
+    }
+    td:nth-child(2n) {
+        border-right: 0;
+    }
+    td.description-col {
+        width: 100%;
+        box-sizing: border-box;
+        border-right: 0;
+    }
+}

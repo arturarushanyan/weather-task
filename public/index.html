@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+
+        <h2 class="heading">Weather App</h2>
+        <span>Select the city to view forecast</span>
+        <select name="city-select" id="city-select" onchange="updateWeather(event)">
+            <option value="Berlin">Berlin</option>
+            <option value="Yerevan">Yerevan</option>
+            <option value="London">London</option>
+            <option value="Moscow">Moscow</option>
+        </select>
+
+        <div id="weather-data">
+            <h3 id="city-name">Loading...</h3>
+            <table>
+                <tbody>
+                    <tr id="date-row"></tr>
+                    <tr id="day-description"></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="js/app.js"></script>
+</body>
+</html>
